@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display&display=swap');
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+nav {
+    background-color: #4d5756;
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: all 500ms;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.img-content {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
